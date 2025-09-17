@@ -1,0 +1,31 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="head">St Paul's High School</header>
+
+    
+    <div class="main">
+<div class="add">
+    <h1>students</h1>
+    <a href="{% url 'newadmission' %}"> <button>New Addmissions</button></a>
+    <a href="{%url 'studentslist' %}"><button> Reports</button></a>
+</div>
+
+<div class="fn">
+     <h1>Teachers</h1>
+     <a href="{% url 'teacherslist' %}"><button>Teachers list</button></a>
+     <a href="{% url 'createteachers'%}"><button>Add teachers</button></a>
+</div>
+
+    </div>
+
+    
+</body>
+</html>

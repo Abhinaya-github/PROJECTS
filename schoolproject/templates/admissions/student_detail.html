@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f7fb; margin: 0; padding: 20px;">
+
+    <div style="max-width: 600px; margin: auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; color: #2c3e50; margin-bottom: 20px;">🎓 Student Details</h2>
+
+        <p><strong>ID:</strong> {{ student.id }}</p>
+        <p><strong>Name:</strong> {{ student.name }}</p>
+        <p><strong>Class:</strong> {{ student.s_class }}</p>
+        <p><strong>Age:</strong> {{ student.age }}</p>
+        <p><strong>Contact:</strong> {{ student.contact }}</p>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="{% url 'studentslist' %}" 
+               style="background-color: #3498db; color: white; padding: 10px 15px; 
+                      text-decoration: none; border-radius: 5px;">
+               ⬅ Back to Student List
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

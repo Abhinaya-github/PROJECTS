@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body background and text */
+body {
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+/* Header styling */
+.head {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Main container */
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    max-width: 900px;
+    gap: 20px;
+}
+
+/* Sections for students and teachers */
+.add, .fn {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 45%;
+    text-align: center;
+}
+
+/* Section headings */
+.add h1, .fn h1 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+    font-size: 1.5em;
+}
+
+/* Buttons styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
